@@ -1,0 +1,216 @@
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background: #364050 url("images/bg01.png");
+    color: #f2f2f2;
+}
+
+.navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  display: block;
+  background-color: #c94663;
+  background-image: url(images/bg01.png);
+  padding: 0.150em 0.25em;
+  border-radius: 0.2em;
+  text-align: center;
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  color: #fff;
+}
+
+
+input[type=search] {
+	background: #555 url(http://hp-proliant.co.uk/qual_images/mob-search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+}
+input[type=search]:focus {
+	width: 600px;
+	background-color: #ccc;
+	border-color: #333;
+	border: solid 1px #fff;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#searchbutton {
+  color: white;
+	border-color: #c94663;
+  background-color: #c94663;
+}
+
+
+/* card details start  */
+
+section{
+    padding: 100px 0;
+}
+.details-card {
+	background: #ecf0f1;
+
+
+}
+
+.card {
+  padding: 6px;
+}
+
+
+.card-body {
+	background: #ffffff;
+	border: 4px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+
+
+}
+
+.card-img {
+	position: relative;
+	overflow: hidden;
+	border-radius: 0;
+	z-index: 1;
+}
+
+.card-img img {
+	width: 100%;
+	height: 300px;
+	display: block;
+}
+
+
+.card-img span {
+	position: absolute;
+    top: 15%;
+    left: 12%;
+    background: #c94663;
+    padding: 6px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transform: translate(-50%,-50%);
+}
+.card-img span h4{
+        font-size: 12px;
+        margin:0;
+        padding:10px 5px;
+         line-height: 0;
+}
+.card-desc {
+	padding: 1.25rem;
+}
+
+.card-desc h3 {
+	color: #000000;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.card-desc p {
+	color: #747373;
+    font-size: 14px;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+.card-footer {
+  position: absolute;
+}
+.btn-card{
+	background-color: #364050;
+  align-self: End;
+	color: #fff;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: .84rem 2.14rem;
+    font-size: .81rem;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    margin: auto;
+    border: 0;
+    -webkit-border-radius: .125rem;
+    border-radius: .125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #fff;
+}
+.btn-card:hover {
+    background: #c94663;
+}
+a.btn-card {
+    text-decoration: none;
+    color: #fff;
+}
+/* End card section */
+
+#formhead {
+    border: 5px solid black;
+    padding: 5px;
+}
+
+.newform {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.btn-link {
+    color: white;
+    text-decoration: none;
+}
+
+#deletebtn {
+    display: inline;
+}
+
+/* Simple Article Post CSS */
+.artimg {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border: 5px dashed #364050;
+    max-height: 400px;
+}
+
+article {
+    margin-bottom: 20%;
+}
+
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    height: 3rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .artimg {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+  }

@@ -1,0 +1,54 @@
+<%- include('templates/header') %>
+
+
+<div>
+    <% if (noMatch !== null){ %>
+        <h3 class="text-center"><%= noMatch %></h3>
+        <div class="form-group container text-center">
+        <form class="form-inline my-2 my-lg-0" action="/latestnews" method="GET">
+          </form>
+        </div>
+    <% } %>
+</div>
+
+
+<!-- <section class="details-card"> -->
+<div class="container-fluid">
+    <div class="row">
+
+<% for (var i = 0; i < articles.length; i++){ %>
+
+        <div class="col-sm-12 col-lg-4">
+          <div class="card h-100 ">
+            <div class="card-body flex-fill d-flex flex-column">
+                <div class="card-img">
+                    <img src='<%=articles[i].image%>'>
+                   </div>
+                <div class="card-desc">
+                    <h2><%=articles[i].title%></h2>
+                <p><%=articles[i].caption%></p>
+                <br>
+
+                  <a href="/latestnews/<%= articles[i]._id %>" class="btn-card">Read</a>
+
+
+                </div>
+            </div>
+        </div>
+
+          </div>
+
+<% if (i % 3 == 0){ %>
+  <% } %>
+  <% } %>
+</div>
+</div>
+
+<!-- </section> -->
+<div style="height:5%;">
+    <span>&nbsp;</span>
+</div>
+
+
+
+<%- include('templates/footer') %>
